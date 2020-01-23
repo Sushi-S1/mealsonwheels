@@ -1,31 +1,46 @@
 import serial
 import pygame
 pygame.init()
-screen = pygame.display.set_mode((640, 480))
+screen = pygame.display.set_mode((240, 240))
 ser = serial.Serial("/dev/ttyACM0",9600)
 print("connected to: " + ser.portstr)
 ser.flush()
+flag = False
 data = ""
 
-while True:
+while not done:
     for event in pygame.event.get():
+        keys = key.get_pressed()
         if event.type == pygame.KEYDOWN:
-          if event.key == pygame.K_UP:
+          if keys[K_UP]:
+             flag = True
              data = "UP"
-             print("up")
-          elif event.key == pygame.K_DOWN:
+          elif keys[K_DOWN]:
+             flag = True
              data = "DOWN"
-             print("down")
-          elif event.key == pygame.K_RIGHT:
+          elif keys[K_RIGHT]:
+             flag = True
              data = "RIGHT"
-             print("right")
-          elif event.key == pygame.K_LEFT:
+          elif keys[K_LEFT]:
+             flag = True
              data = "LEFT"
-             print("left")
-          ser.write(data.encode())
-          ser.flush()
-    
-    
+        elif event.type == pygame.KEYUP:
+          if keys[K_UP]:
+            flag = False
+            data = ""
+          elif keys[K_DOWN]:
+            flag = False
+            data = ""
+          elif keys[K_RIGHT]:
+            flag = False
+            data = ""
+          elif keys[K_LEFT]:
+            flag = False
+            data = "" 
+     if flag == True:
+        ser.write(data.encode())
+        ser.flush()     
+           
     
     
     
