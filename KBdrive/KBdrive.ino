@@ -5,7 +5,7 @@
 //A delay of 2000 Microseconds is Full Forward
 const int rightSide = 3;
 const int leftSide = 5;
-//const int liftMotor = 7;
+//const int liftMotor = 6;
 
 void setup()
 {
@@ -13,8 +13,8 @@ void setup()
   pinMode(rightSide, OUTPUT);
   pinMode(leftSide, OUTPUT);
 //pinMode(liftMotor, OUTPUT);
-  Serial.begin(9600);
-}
+  Serial.begin(57600);
+  
 
 void loop()
 {

@@ -2,7 +2,7 @@ import serial
 import pygame
 pygame.init()
 screen = pygame.display.set_mode((240, 240))
-ser1 = serial.Serial("/dev/ttyACM0",9600)
+ser1 = serial.Serial("/dev/ttyACM0",57600) 
 print("connected to: " + ser1.portstr)
 ser1.flush()
 flag = False
