@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"/>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="main.js"></script>
+<head>
+    <nav class="navbar navbar-light bg-dark">
+        <span class="navbar-brand mb-0 h1 text-white">Food 4 All</span>
+      </nav>
+</head>
+<div class="p-3 mb-2 bg-secondary">
+<body>
+      <div class="container">
+        <div class="row">
+          <div class="col-4">
+            <div class="card">
+                <h5 class="card-header">Live Video Feed:
+                </h5>
+                <div class="card-body">
+                    <img src="{{ url_for('video_feed') }}"> 
+                </div>
+              </div>
+             </div>
+             
+          <div class="col-8">
+            <div class="card">
+                <h5 class="card-header">Real time alerts:
+                </h5>
+                <div class="card-body">
+                  <div class="alert alert-primary" role="alert">
+                    A simple primary alert—check it out!
+                  </div>
+                  <div class="alert alert-secondary" role="alert">
+                    A simple secondary alert—check it out!
+                  </div>
+                  <div class="alert alert-success" role="alert">
+                    A simple success alert—check it out!
+                  </div>
+                  <div class="alert alert-danger" role="alert">
+                    A simple danger alert—check it out!
+                  </div>
+                  <a href="#" class="btn btn-primary">Clear alerts</a>
+                </div>
+              </div>
+          </div>
+          
+        </div>
+      </div>
+</body>
+</div>
+</html>
