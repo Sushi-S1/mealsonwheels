@@ -1,0 +1,15 @@
+{
+    "colorDetected":[
+        {
+            "color":"blue",
+            "time":"18:0:03"
+        }
+    ],
+
+    "HumansDetected": [
+        {
+            "count":1,
+            "time":"18.0.03"
+        }  
+    ]
+}

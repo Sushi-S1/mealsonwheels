@@ -1,4 +1,4 @@
-import robot
+import Robot from robot
  
 while True:
     robot.ColorSensing()
