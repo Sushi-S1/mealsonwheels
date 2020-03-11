@@ -1,23 +1,38 @@
 <!DOCTYPE html>
-<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"/>
-<script src="bootstrap/js/bootstrap.min.js"></script>
-<script type="text/javascript" src= data.json></script>
-<script type="text/javascript" src="main.js"></script>
+<link rel="stylesheet" href="static/bootstrap/css/bootstrap.min.css"/>
+<script src="static/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="static/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src= static/data.json></script>
+<script type="text/javascript" src="static/main.js"></script>
 <head>
     <nav class="navbar navbar-light bg-dark">
         <span class="navbar-brand mb-0 h1 text-white">Food 4 All</span>
       </nav>
+
+      <style>
+        html, body {
+          height: 100%;
+          margin: 0;
+        }
+        
+        .full-height {
+          height: 100%;
+          background: #808080;
+        }
+        </style>
 </head>
-<div class="p-3 mb-2 bg-secondary">
 <body>
-        <div class="row">
+
+<div class="p-3 mb-2 full-height">
+
+       <div class="row">
           <div class="col-4">
             <div class="card">
                 <h5 class="card-header">Live Video Feed:
                 </h5>
-                <div class="card-body">
-                    <img src="{{ url_for('video_feed') }}"> 
-                </div>
+             <div class="card-body">
+        
+                </div> 
               </div>
              </div>
              
@@ -26,31 +41,18 @@
                 <h5 class="card-header">Real time alerts:
                 </h5>
                 <div class="card-body">
-                  <div class="alert alert-primary" role="alert">
-                    A simple primary alert—check it out!
-                  </div>
-                  <div class="alert alert-secondary" role="alert">
-                    A simple secondary alert—check it out!
-                  </div>
-                  <div class="alert alert-success" role="alert">
-                    A simple success alert—check it out!
-                  </div>
-                  <div class="alert alert-danger" role="alert">
-                    A simple danger alert—check it out!
-                  </div>
-
-      
-                  <a href="#" class="btn btn-primary">Clear alerts</a>
+                  <button onclick="addContent()"></button>
                 </div>
-              </div>
+              </div>  
           </div>
           
         </div>
         
-</body>
+      </body>       
 </div>
-<footer class="page-footer font-small bg-dark">
-  <div class="footer-copyright text-center py-3 text-white">© 2020 Copyright:
+
+<footer class="bg-dark">
+  <div class="text-center py-3 text-white">© 2020 Copyright:
     <a> Food 4 all</a>
   </div>
 </footer>
