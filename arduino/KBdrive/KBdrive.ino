@@ -13,7 +13,7 @@ void setup()
   pinMode(rightSide, OUTPUT);
   pinMode(leftSide, OUTPUT);
 //pinMode(liftMotor, OUTPUT);
-  Serial.begin(57600);
+  Serial.begin(115200);
   
 }
 void loop()
