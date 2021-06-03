@@ -29,11 +29,11 @@ class Robot:
         ser2.flush()
         print("connected to: " + ser1.portstr + " at baudrate: " + ser1.baudrate)
         print("connected to: " + ser2.portstr + " at baudrate: " + ser2.baudrate)
-
+        """
     def PlaySound():
         sound = Pygame.mixer.Sound("go_away.wav")
         sound.play()
-
+"""
     def MoveForward():
         ser1.write('F/n')
 
