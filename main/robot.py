@@ -58,27 +58,27 @@ class Robot:
                if event.type == pygame.KEYDOWN:
                     if keys[K_UP]:
                         flag = True
-                        data = "UP"
-                    elif keys[K_DOWN]:
+                        data = "U"
+                    if keys[K_DOWN]:
                         flag = True
-                        data = "DOWN"
-                    elif keys[K_RIGHT]:
+                        data = "D"
+                    if keys[K_RIGHT]:
                         flag = True
-                        data = "RIGHT"
-                    elif keys[K_LEFT]:
+                        data = "R"
+                    if keys[K_LEFT]:
                         flag = True
-                        data = "LEFT"
+                        data = "L"
                 elif event.type == pygame.KEYUP:
                     if keys[K_UP]:
                         flag = False
                         data = ""
-                    elif keys[K_DOWN]:
+                    if keys[K_DOWN]:
                         flag = False
                         data = ""
-                    elif keys[K_RIGHT]:
+                    if keys[K_RIGHT]:
                         flag = False
                         data = ""
-                    elif keys[K_LEFT]:
+                    if keys[K_LEFT]:
                         flag = False
                         data = "" 
                 if flag == True:

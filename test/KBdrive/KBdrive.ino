@@ -21,7 +21,7 @@ void loop()
 
     String read1 = Serial.readString();
 
-    if (read1 == "UP") {
+    if (read1 == "U") {
 
       digitalWrite(rightSide, HIGH);
       delayMicroseconds(1000);
@@ -37,7 +37,7 @@ void loop()
 
     }
 
-    else if (read1 == "DOWN") {
+    if (read1 == "D") {
 
       digitalWrite(rightSide, HIGH);
       delayMicroseconds(2000);
@@ -53,7 +53,7 @@ void loop()
 
     }
 
-    else if (read1 == "RIGHT") {
+    if (read1 == "R") {
 
       digitalWrite(rightSide, HIGH);
       delayMicroseconds(2000);
@@ -68,7 +68,7 @@ void loop()
 
     }
 
-    else if (read1 == "LEFT") {
+    if (read1 == "L") {
 
       digitalWrite(rightSide, HIGH);
       delayMicroseconds(1000);
